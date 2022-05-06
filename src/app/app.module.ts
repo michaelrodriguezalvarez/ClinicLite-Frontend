@@ -38,6 +38,10 @@ import { SidebarComponent } from './layout/sidebar.component';
 import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
+// clinic-details
+import { ClinicDetailsComponent } from './clinic-details/clinic-details.component';
+import { CreateClinicDetailsDialogComponent } from './clinic-details/create-clinic-details/create-clinic-details-dialog.component';
+import { EditClinicDetailsDialogComponent } from './clinic-details/edit-clinic-details/edit-clinic-details-dialog.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +71,11 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     SidebarComponent,
     SidebarLogoComponent,
     SidebarUserPanelComponent,
-    SidebarMenuComponent
+    SidebarMenuComponent,
+    // clinic-details
+    ClinicDetailsComponent,
+    CreateClinicDetailsDialogComponent,
+    EditClinicDetailsDialogComponent
   ],
   imports: [
     CommonModule,
@@ -96,6 +104,9 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     CreateUserDialogComponent,
     EditUserDialogComponent,
     ResetPasswordDialogComponent,
+    // clinic-details
+    CreateClinicDetailsDialogComponent,
+    EditClinicDetailsDialogComponent,
   ],
 })
-export class AppModule {}
+export class AppModule { }
